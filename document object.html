@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Info on document object</title>
+  </head>
+  <body>
+    <p>
+      A content delivery network (CDN) is a network of interconnected servers
+      that speeds up webpage loading for data-heavy applications. CDN can stand
+      for content delivery network or content distribution network. Can get all
+      stuff in html like here with document.all; example let val; val =
+      document.all; /////// other things as well do this in app.js or whatever.
+      val = document.URL; val = document.contentType; and so on lots of options
+      To get all forms on the page do val = document.forms; console.log(val);
+      val = document.forms[0].id; other things as well val =
+      document.scripts[2].getattribute('src'); gives him app.js in his case
+      foreach() is for arrays only can turn into an array by: let scripts =
+      document.scripts; let scriptsArr = Array.from(scripts);
+      scriptsArr.forEach(function(script) { console.log(script); }); loops
+      through and gives you each script tag
+    </p>
+  </body>
+</html>
