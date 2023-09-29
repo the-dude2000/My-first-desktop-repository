@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@tanstack/react-query": "^4.32.6",
+    "@tanstack/react-query-devtools": "^4.32.6",
+    "bootstrap": "^5.3.1",
+    "immer": "^10.0.2",
+    "immutable": "^4.3.0",
+    "lodash": "^4.17.21",
+    "redux": "4.0"
+  }
+}
