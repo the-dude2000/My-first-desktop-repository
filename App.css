@@ -1,11 +1,79 @@
-.App {
-    width: 100%;
-    height: auto;
-    min-height: 100vh;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  body {
+* {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background:  darkgreen;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+.gradient__bg {
+   
+    background: radial-gradient(circle at 4% 27%, rgba(48, 25, 52, 1) 0%, rgba(144, 238, 144, 1) 100%);
+}
+
+.gradient__text {
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clop: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section__padding {
+    padding: 5rem 7rem;
+}
+
+.section__margin {
+    margin: 5rem 7rem;
+}
+
+.scale-down-center {
+	-webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
   }
+  @keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .section__padding {
+        padding: 5rem;
+    }
+    .section__margin {
+        margin: 5rem;
+    }
+
+  }
+  @media screen and (max-width: 551px) {
+    .section__padding {
+        padding: 5rem 3rem;
+    }
+    .section__margin {
+        margin: 5rem 3rem;
+    }
+}
